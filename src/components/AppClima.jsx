@@ -21,7 +21,7 @@ const AppClima = () => {
             <div className="contenedor">
                 {
                     cargando ? <Spinner/> :
-                    error ? <Error>Hubo un error</Error> :
+                    error ? <Error>Hubo un error. Revise si ha escrito correctamente la ciudad o compruebe su conexion</Error> :
                     resultado?.name ? <Resultado/> :
                     <p className="text-center">El resultado se mostrará aquí</p>
                 }
